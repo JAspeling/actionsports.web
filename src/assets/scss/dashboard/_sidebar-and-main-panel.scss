@@ -46,6 +46,13 @@
         background-color: #e53935;
     }
 
+    &[data-background-color="default"] {
+        @include sidebar-background-color($sidebar-background, $white);
+        .nav li .dropdown-menu .dropdown-item {
+            color: $white;
+        }
+    }
+
     .sidebar-wrapper{
         position: relative;
         height: calc(100vh - 75px);
