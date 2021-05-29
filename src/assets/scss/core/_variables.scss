@@ -5,6 +5,8 @@
 
 // Customized BS variables.
 @import "variables/background";
+@import "variables/navbar";
+@import "variables/sidebar";
 @import "variables/custom-forms";
 @import "variables/spacing";
 @import "variables/body";
@@ -22,8 +24,6 @@
 @import "variables/tooltip";
 @import "variables/type";
 @import "variables/modals";
-@import "variables/navbar";
-@import "variables/sidebar";
 
 // import their vars after customization for use below
 $enable-flex: true; // fully adopt flexbox layouts

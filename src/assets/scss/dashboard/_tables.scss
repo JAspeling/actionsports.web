@@ -1,3 +1,20 @@
+.dark-edition {
+  .table > tbody > tr > td,
+  .table > tbody > tr > th,
+  .table > tfoot > tr > td,
+  .table > tfoot > tr > th,
+  .table > thead > tr > td,
+  .table > thead > tr > th {
+    color: $table-text-color;
+    border-color: $table-borders-color;
+    vertical-align: middle;
+  }
+
+  .table-hover tbody tr:hover {
+    background-color: $table-hover-bg;
+  }
+}
+
 .table{
    > thead > tr > th{
        border-bottom-width: 1px;
