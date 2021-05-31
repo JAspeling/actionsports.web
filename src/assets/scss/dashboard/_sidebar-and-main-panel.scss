@@ -46,13 +46,6 @@
         background-color: #e53935;
     }
 
-    &[data-background-color="default"] {
-        @include sidebar-background-color($sidebar-background, $white);
-        .nav li .dropdown-menu .dropdown-item {
-            color: $white;
-        }
-    }
-
     .sidebar-wrapper{
         position: relative;
         height: calc(100vh - 75px);
@@ -463,7 +456,7 @@
 .main-panel{
     position: relative;
     float: right;
-    width: calc(100% - 260px);
+    width: $sidebar-width;
     @include transition (0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
     .main-content{
@@ -606,24 +599,5 @@
   }
   .animation{
       @include transition-all($general-transition-time, $transition-linear);
-    }
-}
-
-// styling for dark edition sidebar
-
-.dark-edition {
-    .sidebar[data-background-color="default"] {
-        background: $sidebar-background;
-
-        .sidebar-background {
-            &:after {
-                background: $sidebar-background;
-                opacity: $sidebar-bg-opacity;
-            }
-        }
-    }
-
-    h1, h2, h3, h4, h5, h6, p {
-        color: $white;
     }
 }

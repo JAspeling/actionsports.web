@@ -335,72 +335,41 @@
             display: inline-flex;
         }
     }
+}
 
-  &.card-plain {
-    background: transparent!important;
+
+.card-plain {
+    background: transparent;
     box-shadow: none !important;
 
     .card-header:not(.card-avatar) {
-      margin-left: 0;
-      margin-right: 0;
+        margin-left: 0;
+        margin-right: 0;
 
-      .card-category,
-      .card-description{
-        color: $gray-color;
-      }
+        .card-category,
+        .card-description{
+          color: $gray-color;
+        }
     }
 
 
 
     .card-body {
-      padding-left: 5px;
-      padding-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .card-header-image {
-      margin: 0 !important;
-      border-radius: $border-radius-large;
-
-      img {
+        margin: 0 !important;
         border-radius: $border-radius-large;
-      }
+
+        img {
+          border-radius: $border-radius-large;
+        }
     }
     .card-footer {
-      padding-left: 5px;
-      padding-right: 5px;
-      background-color: transparent;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: transparent;
     }
-  }
 }
-
-.dark-edition {
-  .card {
-    background: $card-color;
-
-    .card-title {
-      color: $white;
-    }
-
-    .card-body {
-      .card-text {
-        color: $card-title-color;
-      }
-
-      .card-category+.card-title {
-        color: $white;
-      }
-    }
-  }
-
-  .card-chart .card-body .card-category {
-    color: $card-chart-category-color;
-  }
-}
-// Card Footer Links Color
-@include dark-card-links-color('primary', $stats-primary-link-color !important);
-@include dark-card-links-color('info', $stats-info-link-color !important);
-@include dark-card-links-color('warning', $stats-warning-link-color !important);
-@include dark-card-links-color('success', $stats-success-link-color !important);
-@include dark-card-links-color('danger', $stats-danger-link-color !important);
-// import cards
-@import 'cards/cards';

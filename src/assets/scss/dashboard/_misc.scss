@@ -1,20 +1,4 @@
 @import "../core/misc";
-
-.dark-edition {
-  background-color: $dark-background;
-
-  .badge {
-    &.badge-warning {
-      color: $white !important;
-    }
-  }
-  &.off-canvas-sidebar {
-    .navbar-brand {
-      color: $white;
-    }
-  }
-}
-
 .loader {
     margin: 0 auto;
     width: 60px;
