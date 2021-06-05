@@ -7,8 +7,6 @@ import 'rxjs/add/operator/filter';
 import {NavbarComponent} from '../../shared/navbar/navbar.component';
 import PerfectScrollbar from 'perfect-scrollbar';
 
-declare const $: any;
-
 @Component({
   selector: 'app-layout',
   templateUrl: './admin-layout.component.html'
