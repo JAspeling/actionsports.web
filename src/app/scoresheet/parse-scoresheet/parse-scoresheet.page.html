@@ -1,0 +1,77 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-success card-header-icon">
+                        <div class="card-icon">
+                            Parse scoresheet
+                        </div>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-12">
+
+                                <div class="form-group">
+                                    <label>Scoresheet URL</label>
+                                    <input type="text" [(ngModel)]="scoresheetUrl" placeholder="Enter full scoresheet URL here" class="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col text-right">
+                                <button mat-raised-button class="btn btn-primary" (click)="parse()">Parse</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-success card-header-icon">
+                        <div class="card-icon">
+                            Previously parsed scoresheets
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <input type="text" value="" placeholder="Regular" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <mat-form-field class="example-full-width">
+                                    <input matInput type="text" placeholder="With Floating Label">
+                                </mat-form-field>
+                            </div>
+                            <div class="col-sm-4">
+                                <mat-form-field class="example-full-width has-success">
+                                    <input matInput type="text" placeholder="Success input">
+                                    <span class="form-control-feedback">
+        <i class="material-icons">done</i>
+      </span>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-sm-4">
+                                <mat-form-field class="example-full-width has-danger">
+                                    <input matInput type="text" placeholder="Error input">
+                                    <span class="form-control-feedback">
+        <i class="material-icons">clear</i>
+      </span>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

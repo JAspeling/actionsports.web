@@ -2,6 +2,7 @@ import {Routes} from '@angular/router';
 import {DashboardModule} from './dashboard/dashboard.module';
 
 import {AdminLayoutComponent} from './layouts/admin/admin-layout.component';
+import {ScoresheetModule} from "./scoresheet/scoresheet.module";
 
 export const AppRoutes: Routes = [
     {
@@ -16,6 +17,12 @@ export const AppRoutes: Routes = [
                 path: 'dashboard',
                 loadChildren: (): Promise<DashboardModule> => {
                     return import('./dashboard/dashboard.module').then(m => m.DashboardModule);
+                }
+            },
+            {
+                path: 'scoresheet.ts',
+                loadChildren: (): Promise<ScoresheetModule> => {
+                    return import('./scoresheet/scoresheet.module').then(m => m.ScoresheetModule);
                 }
             },
             // {

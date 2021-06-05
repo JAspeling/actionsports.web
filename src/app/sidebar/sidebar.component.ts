@@ -27,6 +27,13 @@ export const ROUTES: RouteInfo[] = [
         title: 'Dashboard',
         type: 'link',
         icontype: 'dashboard'
+    },
+
+    {
+        path: '/scoresheet.ts/parse',
+        title: 'Parse new scoresheet.ts',
+        type: 'link',
+        icontype: 'edit_note'
     }
 ];
 
